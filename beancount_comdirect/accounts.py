@@ -2,6 +2,7 @@ CHECKING = 'checking'
 CREDIT = 'credit'
 SAVINGS = 'savings'
 BROKERAGE = 'brokerage'
+BROKERAGE_CLEARING = 'brokerage_clearing'
 
 STRUCTURE = {
     CHECKING: {
@@ -56,6 +57,19 @@ STRUCTURE = {
             'WKN',
             'Währung',
             'Ausführungskurs',
+            'Umsatz in EUR',
+            '',
+        ],
+    },
+    BROKERAGE_CLEARING: {
+        'type': BROKERAGE_CLEARING,
+        'label': 'Verrechnungskonto',
+        'has_balance': True,
+        'fields': [
+            'Buchungstag',
+            'Wertstellung (Valuta)',
+            'Vorgang',
+            'Buchungstext',
             'Umsatz in EUR',
             '',
         ],
